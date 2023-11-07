@@ -252,6 +252,24 @@ header {
 
 }
 
+.menu h2 {
+    font-size: 5.5rem;
+}
+
+.menu h3 {
+    font-size: 4.5rem;
+    padding: 4rem 0;
+}
+
+.menu h4 {
+    font-size: 3.5rem;
+}
+
+.menu p {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
 .menu>div {
     background-color: rgb(0, 4, 17, .8);
     text-align: center;
@@ -265,6 +283,7 @@ header {
 .menu>div>div {
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
 }
 
 .menu-section {
@@ -272,7 +291,7 @@ header {
     flex-direction: column;
     width: 35%;
     margin: 0 auto;
-    flex-wrap: wrap;
+    min-width: 30rem;
 }
 
 .menu-item {
@@ -348,6 +367,13 @@ footer p {
         min-width: inherit;
     }
 
+    h2,
+    h3,
+    h4,
+    p {
+        color: rgb(0, 4, 17);
+    }
+
     /* header section */
     header h1 {
         font-size: 5rem;
@@ -362,6 +388,58 @@ footer p {
     /* menu */
     .menu {
         background-image: none;
+    }
+
+    .menu>div {
+        background-color: rgb(225, 239, 230);
+    }
+
+    .menu h2 {
+        font-size: 5rem;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1rem solid rgb(0, 4, 17);
+    }
+
+    .menu h3 {
+        font-size: 4rem;
+        border: 0.5rem solid rgb(0, 4, 17);
+        margin: 4rem auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    .menu h4 {
+        font-size: 3rem;
+    }
+
+    .menu p {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        width: 75%;
+        border-bottom: 0.5rem solid rgb(0, 4, 17);
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .menu-item {
+        text-align: center;
+    }
+
+    .menu>div {
+        padding-bottom: 15rem;
+    }
+
+    .menu>div>div {
+        text-align: center;
+    }
+
+    .menu-item>div {
+        flex-direction: column;
+    }
+
+    .menu>div>div>div.menu-section>div.menu-item:last-child p {
+        border: 0;
     }
 
     /* footer section */
